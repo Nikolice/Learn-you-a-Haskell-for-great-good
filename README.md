@@ -76,10 +76,10 @@ This – is a markdown port of Miran Lipovača's great book [“Learn you a Hask
     - [Heathrow to London](09_functionally_solving_problems/01_heathrow_to_london.md)
 
 - [Functors, Applicative Functors and Monoids](10_functors_applicative_functors_and_monoids/00_functors_applicative_functors_and_monoids.md)
-    -[Functors redux](10_functors_applicative_functors_and_monoids/01_functors_redux.md)
-    -[Applicative functors](10_functors_applicative_functors_and_monoids/02_applicative_functors.md)
-    -[The newtype keyword](10_functors_applicative_functors_and_monoids/03_the_newtype_keyword.md)
-    -[Monoids](10_functors_applicative_functors_and_monoids/04_monoids.md)
+    - [Functors redux](10_functors_applicative_functors_and_monoids/01_functors_redux.md)
+    - [Applicative functors](10_functors_applicative_functors_and_monoids/02_applicative_functors.md)
+    - [The newtype keyword](10_functors_applicative_functors_and_monoids/03_the_newtype_keyword.md)
+    - [Monoids](10_functors_applicative_functors_and_monoids/04_monoids.md)
 
 - [A Fistful of Monads](11_a_fistful_of_monads/00_a_fistful_of_monads.md)
     - [Getting our feet wet with Maybe](11_a_fistful_of_monads/01_getting_our_feet_wet_with_maybe.md)
