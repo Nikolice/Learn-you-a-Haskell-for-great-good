@@ -1,4 +1,4 @@
-# What you need to dive in
+# What do you need, – to dive in?
 
 A text editor and a “Haskell” compiler. You (probably) already have your favorite text editor installed – so, – we – *won't* waste time (on that). For the purposes of this tutorial, – we'll be using the “GHC”: the most *widely* used “Haskell” compiler… The best way (to get started) – is to download the [“Haskell” Platform](https://www.haskell.org/platform/), – which is (basically) “Haskell” – with “batteries” included…
 
