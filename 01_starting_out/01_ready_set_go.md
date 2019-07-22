@@ -132,8 +132,18 @@ ghci> max 100 101
 101   
 ```
 
-How ever; if we wanted to get the *successor*, of the product of numbers `9` & `10`, – we *couldn't* write just a `succ 9 * 10`, – because, that – would get the successor of a `9`, which would (then) be multiplied by a `10`, – re-sulting in a `100`… We – 'd have to write a `succ (9 * 10)`, – to get the `91`!
+How ever; if we wanted to get the *successor* of the product, of numbers `9` & `10`, – we – *couldn't* write (just) a `succ 9 * 10`, – be-cause, that – would *get* the successor of a `9`, – which – would (then) be multiplied, by a `10`; – re-sulting – in a `100`… We'd – have to write a `succ (9 * 10)`; – to get the `91`!
 
-If a function takes *two* parameters – we can (also) call it like an “in-fix” function: by – surrounding it, – with *“back-ticks”*… For “in-stance”: the `div` function – takes *two* integers, and does an *integral* division (be-tween them)… Doing the `div 92 10` – results in a `9`… But; when we call it like *that*, – there – may be some *confusion*, – as – to: which (of the numbers) – is *doing* the division, – and, – which – is a *divided* being… So, – we can call it, as an “in-fix” function: by – doing a ``92 `div` 10``, – and (suddenly), – it's much clearer!
+If a function takes *two* parameters, – we can (also) call it like an “in-fix” function: by – surrounding it *with* “back-ticks”… For in-stance; the `div` function: takes – *two* integers, and does – an *integral* division (be-tween them)… Doing the `div 92 10` – re-sults in a `9`… But; when we call it like *that*, – there – may be some *confusion*, – as: which (of the numbers) – is *doing* the division, – and, – which – is a *divided* being… So, – we can call it – as an “in-fix” function: by – doing a ``92 `div` 10``, – and (suddenly), – it's – much clearer!
 
-Lots of people (who – came from imperative languages) – tend to stick to the notion, that: parentheses – *should* denote function’s application! … For an ex-ample; in “C”, – you – use parentheses, to call functions: like `foo()`, `bar(1)` or `baz(3, "haha")`… Like we’d said, – spaces – are used (for function application) in “Haskell”. So, those functions (in “Haskell”) – would be: a `foo`, a `bar 1`, and – a `baz 3 "haha"`… So, if you see some-thing like `bar (bar 3)`, – it *doesn't* mean that: `bar` – is called with a `bar` and a `3`, as parameters! … It means – that: we (first) – call for the function `bar` (with – `3`, as the parameter) – to get some *number*; and (then), we call the `bar` again – *with* that number… In “C”, – that – would be some-thing, like: `bar(bar(3))`.
+Lots of people (who – came from *imperative* languages) – tend to “stick” to the notion, that: parentheses – should denote function’s *application*! … For an ex-ample; in “C”, – you – use parentheses, to *call* functions; like: 
+- `foo()`, 
+- `bar(1)`,
+- or `baz(3, "haha")`… 
+
+Like we’d said, – **spaces** – are used (for function application), in “Haskell”! … So, those functions (in “Haskell”) – would be: 
+- a `foo`, 
+- a `bar 1`, 
+- and – a `baz 3 "haha"`… 
+
+So; if you see some-thing, like `bar (bar 3)` – it *doesn't* mean that: «The `bar` – is called: with – “a `bar`” and “a `3`”, – as the parameters!» … It means – that: we (first) – call for the function `bar` (with – a `3`, as the parameter), to get some *number*; and (then), – we call the `bar`, again: *with* that number… In “C”, – *that* – would be some-thing, like: `bar(bar(3))`.
