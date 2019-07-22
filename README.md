@@ -1,13 +1,13 @@
-**_The porting process may still be in progress, so the book may not be complete._**
+**The porting process – may _still_ be in progress! (So, the book – may _not_ be complete. O'kay?)**
 
-This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.com/).
+This – is a mark-down port – of Miran Lipovača's [book](http://learnyouahaskell.com/).
 
 - [Introduction](00_introduction/00_introduction.md)
     - [About this tutorial](00_introduction/01_about_this_tutorial.md)
     - [So: what's “Haskell”?](00_introduction/02_so_whats_haskell.md)
     - [What do you need – to dive in?](00_introduction/03_what_you_need_to_dive_in.md)
 
-- [Starting Out](01_starting_out/00_starting_out.md)
+- [Starting out](01_starting_out/00_starting_out.md)
     - [“Ready? … Set? … – Go!”](01_starting_out/01_ready_set_go.md)
     - [Baby's first functions](01_starting_out/02_babys_first_functions.md)
     - [An intro – to lists](01_starting_out/03_an_intro_to_lists.md)
@@ -15,12 +15,12 @@ This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.
     - [“I'm – a list comprehension”](01_starting_out/05_im_a_list_comprehension.md)
     - [Tuples](01_starting_out/06_tuples.md)
 
-- [Types and Type-Classes](02_types_and_typeclasses/00_types_and_typeclasses.md)
+- [Types & type-classes](02_types_and_typeclasses/00_types_and_typeclasses.md)
     - [Believe the type](02_types_and_typeclasses/01_believe_the_type.md)
     - [Type variables](02_types_and_typeclasses/02_type_variables.md)
     - [Type-classes’ «101»](02_types_and_typeclasses/03_typeclasses_101.md)
 
-- [Syntax – in Functions](03_syntax_in_functions/00_syntax_in_functions.md)
+- [Syntax – in functions](03_syntax_in_functions/00_syntax_in_functions.md)
     - [Pattern matching](03_syntax_in_functions/01_pattern_matching.md)
     - [“Guards! Guards!”](03_syntax_in_functions/02_guards_guards.md)
     - [“Where…”](03_syntax_in_functions/03_where.md)
@@ -28,7 +28,7 @@ This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.
     - [Case expressions](03_syntax_in_functions/05_case_expressions.md)
 
 - [Recursion](04_recursion/00_recursion.md)
-    - [Hello, recursion](04_recursion/01_hello_recursion.md)
+    - [“Hello, recursion!”](04_recursion/01_hello_recursion.md)
     - [Maximum awesome](04_recursion/02_maximum_awesome.md)
     - [A few more recursive functions](04_recursion/02_a_few_more_recursive_functions.md)
     - [“Quick: sort!”](04_recursion/03_quick_sort.md)
@@ -39,7 +39,7 @@ This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.
     - [Some “higher-orderism” – is in order](05_higher_order_functions/02_some_higher_orderism_is_in_order.md)
     - [Maps & filters](05_higher_order_functions/03_maps_and_filters.md)
     - [Lambdas](05_higher_order_functions/04_lambdas.md)
-    - [Only folds & horses](05_higher_order_functions/05_only_folds_and_horses.md)
+    - [Only – folds & horses](05_higher_order_functions/05_only_folds_and_horses.md)
     - [Function application, with… “$”](05_higher_order_functions/06_function_application_with_dollar.md)
     - [Function composition](05_higher_order_functions/07_function_composition.md)
 
@@ -51,7 +51,7 @@ This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.
     - [“Data.Set”](06_modules/05_data_set.md)
     - [Making our own modules](06_modules/06_making_our_own_modules.md)
 
-- [Making our own types and type-classes](07_making_our_own_types_and_typeclasses/00_making_our_own_types_and_typeclasses.md)
+- [Making our own types (and type-classes)](07_making_our_own_types_and_typeclasses/00_making_our_own_types_and_typeclasses.md)
     - [Algebraic data types – intro](07_making_our_own_types_and_typeclasses/01_algebraic_data_types_intro.md)
     - [Record syntax](07_making_our_own_types_and_typeclasses/02_record_syntax.md)
     - [Type parameters](07_making_our_own_types_and_typeclasses/03_type_parameters.md)
@@ -59,7 +59,7 @@ This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.
     - [Type synonyms](07_making_our_own_types_and_typeclasses/05_type_synonyms.md)
     - [Recursive data structures](07_making_our_own_types_and_typeclasses/06_recursive_data_structures.md)
     - [Typeclasses 102](07_making_our_own_types_and_typeclasses/07_typeclasses_102.md)
-    - [A yes-no type-class](07_making_our_own_types_and_typeclasses/08_a_yes_no_typeclass.md)
+    - [A “Yes/No” type-class](07_making_our_own_types_and_typeclasses/08_a_yes_no_typeclass.md)
     - [The “Functor” type-class](07_making_our_own_types_and_typeclasses/09_the_functor_typeclass.md)
     - [Kinds and some type-foo](07_making_our_own_types_and_typeclasses/10_kinds_and_some_type_foo.md)
 
@@ -75,25 +75,25 @@ This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.
     - [Reverse Polish notation calculator](09_functionally_solving_problems/00_reverse_polish_notation_calculator.md)
     - [“Heathrow – to London”](09_functionally_solving_problems/01_heathrow_to_london.md)
 
-- [Functors, Applicative Functors and Monoids](10_functors_applicative_functors_and_monoids/00_functors_applicative_functors_and_monoids.md)
+- [Functors, applicative functors, & monoids](10_functors_applicative_functors_and_monoids/00_functors_applicative_functors_and_monoids.md)
     - [Functors redux](10_functors_applicative_functors_and_monoids/01_functors_redux.md)
     - [Applicative functors](10_functors_applicative_functors_and_monoids/02_applicative_functors.md)
-    - [The newtype keyword](10_functors_applicative_functors_and_monoids/03_the_newtype_keyword.md)
+    - [The “newtype” keyword](10_functors_applicative_functors_and_monoids/03_the_newtype_keyword.md)
     - [Monoids](10_functors_applicative_functors_and_monoids/04_monoids.md)
 
-- [A fist-ful of monads](11_a_fistful_of_monads/00_a_fistful_of_monads.md)
+- [A fist-ful – of monads](11_a_fistful_of_monads/00_a_fistful_of_monads.md)
     - [Getting our feet wet – with “maybe”](11_a_fistful_of_monads/01_getting_our_feet_wet_with_maybe.md)
-    - [The “monad” type class](11_a_fistful_of_monads/02_the_monad_type_class.md)
+    - [The “monad” type-class](11_a_fistful_of_monads/02_the_monad_type_class.md)
     - [Walk the line](11_a_fistful_of_monads/03_walk_the_line.md)
     - [“Do” notation](11_a_fistful_of_monads/04_do_notation.md)
     - [The “list” monad](11_a_fistful_of_monads/05_the_list_monad.md)
     - [Monad laws](11_a_fistful_of_monads/06_monad_laws.md)
 
-- [For a few monads more](12_for_a_few_monads_more/00_for_a_few_monads_more.md)
-    - [Writer? – I hardly know her!](12_for_a_few_monads_more/01_writer_i_hardly_know_her.md)
-    - [Reader? – Ugh; not this joke, again.](12_for_a_few_monads_more/02_Reader_ugh_not_this_joke_again.md)
-    - [Tasteful stateful computations](12_for_a_few_monads_more/03_tasteful_stateful_computations.md)
-    - [“Error”, “error”, on the wall](12_for_a_few_monads_more/04_error_error_on_the_wall.md)
+- [For – a few monads, more…](12_for_a_few_monads_more/00_for_a_few_monads_more.md)
+    - [“Writer? – I hardly know her!”](12_for_a_few_monads_more/01_writer_i_hardly_know_her.md)
+    - [“Reader? – Ugh; not this joke, again.”](12_for_a_few_monads_more/02_Reader_ugh_not_this_joke_again.md)
+    - [Tasteful, stateful computations](12_for_a_few_monads_more/03_tasteful_stateful_computations.md)
+    - [“Error”, “error”, – on the wall](12_for_a_few_monads_more/04_error_error_on_the_wall.md)
     - [Some useful monadic functions](12_for_a_few_monads_more/05_some_useful_monadic_functions.md)
     - [Making monads](12_for_a_few_monads_more/06_making_monads.md)
 
