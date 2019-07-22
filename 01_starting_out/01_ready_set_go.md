@@ -33,8 +33,6 @@ ghci> 1892 - 1472
 
 ghci> 5 / 2  
 2.5  
-
-ghci>  
 ```
 
 This – is pretty *self-explanatory*… We can (also) use *several* operators (on one line); and, all the *usual* precedence rules – are *obeyed*… We – can use the *parentheses*: to, make the *precedence* – “explicit” (or – to change it):
