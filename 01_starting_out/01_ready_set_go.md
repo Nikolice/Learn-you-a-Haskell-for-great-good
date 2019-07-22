@@ -1,15 +1,20 @@
-# Ready? … Set? … – Go!
+# Ready? Set? – Go!
 
-Al-right; let's get started! 
+Al-right? … Let's get started?
 
-If you're the sort of *horrible* person (who – doesn't read the introductions to things, and you’ve skipped it), – you – *might* want to read the *last* section (in the introduction) (any way), because – it explains, what do you *need* (in order – to follow, this tutorial) and – *how* we're going to “load” functions… The first thing we're going to do – is to run the `ghc`'s interactive mode; and – call some function, – to get a *very* basic feel (for “Haskell”)… 
+If you’re a sort of a _“horrible”_ person (who – *didn't* read the intro-duction, to this thing; so – you’ve *skipped* it?) – you *might* want to read the *last* section (in – the intro-duction) any way, – be cause, it – ex-plains: 
+- *What* – do you *need* (in order – to *follow* this, tutorial);
+- And – *how* – we're “going” (to “load” functions).
 
-Open your terminal – and – type in: `ghci`… You – will be greeted (with – some-thing *like* this): 
+The **first** thing (we're going, to do) – is – to “run” (the `ghc`’s) «inter-active mode», – and – to *call* (for – some “functions”): to – get a *very* “basic” feel (for – the “Haskell”)…
+
+Open your “terminal” – and, – type in: the `ghci` … You – will be *greeted* (with – a *some*-thing like this): 
 
 ```text
-GHCi, version 6.8.2: http://www.haskell.org/ghc/  :? for help  
-Loading package base ... linking ... done.  
-Prelude>  
+“GHCi” (version – № „6.8.2“): http://www.haskell.org/ghc/  (“:?” – for help.)
+Loading package base; … linking; … done!  
+
+Pre-lude>  
 ```
 
 Congratulations: you – 're in the “GHCI”! … The prompt (here) – is a `Prelude>`, but (because it can get longer, – when you load “stuff”, into the session) – we're going to use the `ghci>`! … If you want to have the *same* prompt – just – type in: `:set prompt "ghci> "`.
@@ -32,7 +37,7 @@ ghci> 5 / 2
 ghci>  
 ```
 
-This – is pretty *self-explanatory*… We can (also) use *several* operators (on one line); and, all the *usual* precedence rules – are *obeyed*… We – can use *parentheses*: to make the *precedence* – “explicit” (or – to change it):
+This – is pretty *self-explanatory*… We can (also) use *several* operators (on one line); and, all the *usual* precedence rules – are *obeyed*… We – can use the *parentheses*: to, make the *precedence* – “explicit” (or – to change it):
 
 ```haskell
 ghci> (50 * 100) - 4999  
