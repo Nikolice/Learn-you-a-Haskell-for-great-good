@@ -4,7 +4,7 @@ Al-right; let's get started!
 
 If you're the sort of *horrible* person (who – doesn't read the introductions to things, and you’ve skipped it), – you – *might* want to read the *last* section (in the introduction) (any way), because – it explains, what do you *need* (in order – to follow, this tutorial) and – *how* we're going to “load” functions… The first thing we're going to do – is to run the `ghc`'s interactive mode; and – call some function, – to get a *very* basic feel (for “Haskell”)… 
 
-Open your terminal – and – type in: `ghci`… You – will be greeted: with some-thing *like* this: 
+Open your terminal – and – type in: `ghci`… You – will be greeted (with – some-thing *like* this): 
 
 ```text
 GHCi, version 6.8.2: http://www.haskell.org/ghc/  :? for help  
