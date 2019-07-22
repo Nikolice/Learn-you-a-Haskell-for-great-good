@@ -17,9 +17,9 @@ Loading package base; … linking; … done!
 Pre-lude>  
 ```
 
-Congratulations: you – 're in the “GHCI”! … The prompt (here) – is a `Prelude>`, but (because it can get longer, – when you load “stuff”, into the session) – we're going to use the `ghci>`! … If you want to have the *same* prompt – just – type in: `:set prompt "ghci> "`.
+Con-gratulations: you – 're in the “GHCI”! … The prompt (here) – is a `Prelude>`, but (be cause – it can get longer, – when – you load “stuff”, in to the *session*) – we're “going” to use the `ghci>`! … If you want to have the *same* prompt – just type in: `:set prompt "ghci> "`.
 
-Here – 's some simple **arithmetic**:
+Here – 's some (simple) **arithmetic**:
 
 ```haskell
 ghci> 2 + 15  
