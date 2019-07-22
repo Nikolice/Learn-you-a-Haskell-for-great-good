@@ -2,7 +2,7 @@
 
 Al-right? … Let's get started?
 
-If you’re a sort of a _“horrible”_ person (who – *didn't* read the intro-duction, to this thing; so – you’ve *skipped* it?) – you *might* want to read the *last* section (in – the intro-duction) any way, – be cause, it – ex-plains: 
+If you’re a sort of _“horrible”_ person (who – *didn't* read the intro-duction, to this thing; so – you’ve *skipped* it?) – you *might* want to read the *last* section (in – the intro-duction) any way, – be cause, it – ex-plains: 
 - *What* – do you *need* (in order – to *follow* this, tutorial);
 - And – *how* – we're “going” (to “load” functions).
 
@@ -17,7 +17,7 @@ Loading package base; … linking; … done!
 Pre-lude>  
 ```
 
-Con-gratulations: you – 're in the “GHCI”! … The prompt (here) – is a `Prelude>`, but (be cause – it can get longer, – when – you load “stuff”, in to the *session*) – we're “going” to use the `ghci>`! … If you want to have the *same* prompt – just type in: `:set prompt "ghci> "`.
+Con-gratulations: you're – in the “GHCI”! … The prompt (here) – is a `Prelude>`; but (be cause, it can get longer – when you load “stuff”, in-to the *session*), – we're – “going” to use the `ghci>`! … If you want (to: have the *same* prompt) – just type in: `:set prompt "ghci> "`.
 
 Here – 's some (simple) **arithmetic**:
 
@@ -35,7 +35,7 @@ ghci> 5 / 2
 2.5  
 ```
 
-This – is pretty *self-explanatory*… We can (also) use *several* operators (on one line); and, all the *usual* precedence rules – are *obeyed*… We – can use the *parentheses*: to, make the *precedence* – “explicit” (or – to change it):
+This – is pretty *self-explanatory*… We – can (also) use *several* operators (on – *one* line); and, all the *usual* precedence rules – are – *obeyed*… We – can use the *parentheses*: to, make the *precedence* – “explicit” (or – to *change* it):
 
 ```haskell
 ghci> (50 * 100) - 4999  
@@ -48,12 +48,11 @@ ghci> 50 * (100 - 4999)
 -244950  
 ```
 
-Pretty “cool”, huh? … Yeah, I know: it's not; but, – bear, with me… A little pit-fall (to watch *out* for here) – is – **negating** numbers. If we want to have a *negative* number –
-it's always best – to surround it, with parentheses… Doing a `5 * -3` – will make “GHCI” *yell* at you; but, doing a `5 * (-3)` – will work (just fine). 
+Pretty “cool”, huh? … Yeah, I know: it's – not; but, – bear – with me… A little pit-fall (to watch *out*, for here) – is – **negating** numbers! … If we’d ever want to have a *negative* number, – it's (al-ways) best – to “sur-round” it with *parentheses*… Doing a `5 * -3` – will make the “GHCI” *yell* (at you); but, doing a `5 * (-3)` – will work (just fine). 
 
-Boolean algebra – is also pretty straight-forward. As you probably know: 
-- `&&` – means a boolean _and_;
-- `||` – means a boolean _or_;
+Boolean algebra – is (also) pretty “straight-forward”. As you (probably) know: 
+- `&&` – means a Boolean _“and”_;
+- `||` – means a Boolean _“or”_;
 - `not` – negates a `True` (or – a `False`).
 
 
@@ -93,7 +92,7 @@ ghci> "hello" == "hello"
 True   
 ```
 
-What about doing a `5 + "llama"` (or – a `5 == True`)? … Well, if we try the *first* snippet, – we’ll get a *big* scary “error” message!
+What – about doing a `5 + "llama"` (or – a `5 == True`)? … Well; if we try the *first* snippet, – we’ll get a *big* scary “error” message:
 
 ```text
 No instance – for (Num [Char]) –
@@ -104,7 +103,7 @@ In the expression: 5 + "llama"
 In the definition of `it': it = 5 + "llama"   
 ```
 
-Yikes! … What “GHCI” is telling us (here) – is that: `"llama"` – is not a number, and (so) it *doesn't* know: how – to add it – to a `5`… Even if it *wasn't* `"llama"` (but – `"four"`, or – `"4"`), – “Haskell” – *still* wouldn't consider it, to be a number… `+` – expects its *left-and-right* sides – to be numbers. If we tried to do a `True == 5` – “GHCI” would tell us that: «The types – don't match!» … Where-as `+` works only on things, which *are* considered numbers, – the `==` – works on *any* two things (which – *can* be compared). But, the catch – is that: they (both) – have to be the *same* type, of thing… You – can't compare **apples** and **oranges**! … We – 'll take a *closer* look (at types) a bit later… Note: you – can do a `5 + 4.0`, because `5` – is “sneaky” (and – can act like an “integer”, or – a floating-point number). `4.0` – can't act like an “integer”; so, `5` – is the one, that *has* to adapt!
+Yikes! … What “GHCI” is telling us (here) – is that: `"llama"` – is not a number, – and (so) it *doesn't* know: how – to add it, to a `5`… Even if it *wasn't* `"llama"` (but – `"four"`, or – `"4"`), – “Haskell” – *still* wouldn't consider it, to be a number… `+` – expects its *left-and-right* sides – to be numbers. If we tried to do a `True == 5` – “GHCI” would tell us that: «The types – don't match!» … Where-as `+` works only on things, which *are* considered numbers, – the `==` – works on *any* two things (which – *can* be compared). But, the catch – is that: they (both) – have to be the *same* type, of thing… You – can't compare **apples** and **oranges**! … We – 'll take a *closer* look (at types) a bit later… Note: you – can do a `5 + 4.0`, because `5` – is “sneaky” (and – can act like an “integer”, or – a floating-point number). `4.0` – can't act like an “integer”; so, `5` – is the one, that *has* to adapt!
 
 You – may *not* have known it, but… we – 've been using *functions* now (all – a-long)… For instance: the `*` – is a function, which takes two *numbers* (and – multiplies them)… As you've seen, – we – call it by “sandwiching” it (be-tween them). This – is what we call an _in-fix_ function! … Most functions (which – *aren't* used with numbers) – are _pre-fix_
 functions! … Let's take a look (at them)…
