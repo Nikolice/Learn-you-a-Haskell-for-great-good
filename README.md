@@ -1,10 +1,9 @@
 **_The porting process is still in progress, so the book may not be complete._**
 
 # Learn You a Haskell for Great Good!
-[![Build Status](https://travis-ci.com/aDotInTheVoid/Learn_You_a_Haskell.svg?branch=master)](https://travis-ci.com/aDotInTheVoid/Learn_You_a_Haskell)
-[Read me online](https://adotinthevoid.github.io/Learn_You_a_Haskell/) 
+[Read me online](https://nikolice.github.io/Learn-you-a-Haskell-for-great-good/) 
 
-This is a markdown port of Miran Lipovača's great book [Learn You a Haskell](http://learnyouahaskell.com/), rendered to [html](https://adotinthevoid.github.io/Learn_You_a_Haskell/) by [mdBook](https://github.com/rust-lang-nursery/mdBook).
+This is a markdown port of Miran Lipovača's great book [Learn You a Haskell](http://learnyouahaskell.com/), rendered to [html](https://nikolice.github.io/Learn-you-a-Haskell-for-great-good/) by [mdBook](https://github.com/rust-lang-nursery/mdBook).
 
 
 ---
