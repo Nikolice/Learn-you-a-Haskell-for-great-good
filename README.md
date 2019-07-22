@@ -1,6 +1,6 @@
-**_The porting process is still in progress, so the book may not be complete._**
+**_The porting process may still be in progress, so the book may not be complete._**
 
-This – is a markdown port of Miran Lipovača's great book [“Learn you a Haskell for great good!”](http://learnyouahaskell.com/).
+This – is a markdown port of Miran Lipovača's [book](http://learnyouahaskell.com/).
 
 - [Introduction](00_introduction/00_introduction.md)
     - [About this tutorial](00_introduction/01_about_this_tutorial.md)
