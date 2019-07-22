@@ -2,7 +2,9 @@
 
 Al-right; let's get started! 
 
-If you're the sort of horrible person (who – doesn't read introductions to things and you skipped it) – you might want to read the last section in the introduction (any way), because – it explains, what you need (to follow this tutorial) and – how we're going to load functions. The first thing we're going to do – is run `ghc`'s interactive mode and call some function – to get a very basic feel for “Haskell”… Open your terminal – and type in: `ghci`… You – will be greeted: with something like this: 
+If you're the sort of *horrible* person (who – doesn't read the introductions to things, and you’ve skipped it), – you – *might* want to read the *last* section (in the introduction) (any way), because – it explains, what do you *need* (in order – to follow, this tutorial) and – *how* we're going to “load” functions… The first thing we're going to do – is to run the `ghc`'s interactive mode; and – call some function, – to get a *very* basic feel (for “Haskell”)… 
+
+Open your terminal – and – type in: `ghci`… You – will be greeted: with some-thing *like* this: 
 
 ```text
 GHCi, version 6.8.2: http://www.haskell.org/ghc/  :? for help  
@@ -10,9 +12,9 @@ Loading package base ... linking ... done.
 Prelude>  
 ```
 
-Congratulations: you – 're in the “GHCI”! … The prompt here – is `Prelude>`, but because it can get longer (when – you load “stuff”, into the session) – we're – going to use the `ghci>`. If you want to have the same prompt – just type in: `:set prompt "ghci> "`.
+Congratulations: you – 're in the “GHCI”! … The prompt (here) – is a `Prelude>`, but (because it can get longer, – when you load “stuff”, into the session) – we're going to use the `ghci>`! … If you want to have the *same* prompt – just – type in: `:set prompt "ghci> "`.
 
-Here – 's some *simple* arithmetic. 
+Here – 's some simple **arithmetic**:
 
 ```haskell
 ghci> 2 + 15  
