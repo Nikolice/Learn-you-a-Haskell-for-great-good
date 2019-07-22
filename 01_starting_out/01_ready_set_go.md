@@ -141,7 +141,7 @@ Lots of people (who – came from *imperative* languages) – tend to “stick�
 - `bar(1)`,
 - or `baz(3, "haha")`… 
 
-Like we’d said, – **spaces** – are used (for function application), in “Haskell”! … So, those functions (in “Haskell”) – would be: 
+As we said, – **spaces** – are used (for function application), in “Haskell”! … So, those functions (in “Haskell”) – would be: 
 - a `foo`, 
 - a `bar 1`, 
 - and – a `baz 3 "haha"`… 
