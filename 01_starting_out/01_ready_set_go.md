@@ -48,7 +48,7 @@ ghci> 50 * (100 - 4999)
 -244950  
 ```
 
-Pretty cool, huh? … Yeah, I know: it's not; but, – bear, with me… A little pit-fall (to watch *out* for here) – is – **negating** numbers. If we want to have a *negative* number –
+Pretty “cool”, huh? … Yeah, I know: it's not; but, – bear, with me… A little pit-fall (to watch *out* for here) – is – **negating** numbers. If we want to have a *negative* number –
 it's always best – to surround it, with parentheses… Doing a `5 * -3` – will make “GHCI” *yell* at you; but, doing a `5 * (-3)` – will work (just fine). 
 
 Boolean algebra – is also pretty straight-forward. As you probably know: 
@@ -116,7 +116,7 @@ ghci> succ 8
 9   
 ```
 
-The `succ` function – takes any-thing, which has a *defined* successor, – and – re-turns that (successor). As you can *see*: we – ’ve just separated the function’s name – from – the parameter (with – a space)… Calling a *function* with **several** parameters – is (also) simple. The functions `min` and `max`  – take *two* things (which – can be put – in an order: like numbers!). `min` – re-turns the one, that's lesser; and `max` – re-turns the one, that's greater. See (for your self): 
+The `succ` function – takes *any* thing, which has a *defined* successor (and – re-turns that, successor). As you can *see*: we – ’ve just separated the function’s name – from – the parameter (with – a space)… Calling a *function* with **several** parameters – is (also) simple. The functions `min` and `max`  – take *two* things (which – can be put – in an order: like numbers!). `min` – re-turns the one, that's lesser; and `max` – re-turns the one, that's greater. See (for your self): 
 
 ```haskell
 ghci> min 9 10  
