@@ -16,7 +16,7 @@ ghci> lostNumbers
 [4,8,15,16,23,42]  
 ```
 
-As you can see, – lists – are denoted by “square” brackets (**`[` & `]`**); and, the “values” (in lists) – are separated by *commas*… If we would (ever) tried parsing, of a list similar to a `[1,2,'a',3,'b','c',4]` – the “Haskell” – would complain: the *characters* (in single quotes) – *are’t* numbers! … Speaking of characters; – strings – are *lists* (of characters): a `Hello!` – is the syntactic “sugar” of `['H','e','l','l','o','!']`… And because the strings are *lists* – we can use the “list’s” function (on them), – which is *really* handy! … So, a common task (of – putting 2 lists, together) – can be done (by `++` operator):
+As you can see, – lists – are denoted by “square” brackets (**`[` & `]`**); and, the “values” (in lists) – are separated: by *commas*… If we would (ever) tried parsing, of a list similar to a `[1,2,'a',3,'b','c',4]` – the “Haskell” – would complain: the *characters* (in single quotes) – *are’t* numbers! … Speaking of characters; – strings – are *lists* (of characters): a `Hello!` – is the syntactic “sugar” of `['H','e','l','l','o','!']`… And because the strings are *lists* – we can use the “list’s” function (on them), – which is *really* handy! … So, a common task (of – putting 2 lists, together) – can be done (by `++` operator):
 
 ```haskell
 ghci> [1,2,3,4] ++ [9,10,11,12]  
