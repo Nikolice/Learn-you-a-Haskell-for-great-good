@@ -44,9 +44,9 @@ Notice – how `:` takes a number and a list of numbers (or: a character – and
 `[1,2,3]` – is (actually) just the syntactic sugar of a `1:2:3:[]`… And `[]` – is an empty list… If we prepend a `3` to it, – it becomes a `[3]`. If we (then) prepend a `2` for it – it becomes a `[2,3]`; and – so – on. 
 
 > **Note**: a `[]`, a `[[]]` and a `[[],[],[]]` – are (all) *different* things: 
-> - the “first” one – is an *empty* list, 
-> - the “second” one – is a list, containing one empty list,
-> - and the “third” one – is a list, containing **three** empty lists.
+> - the “first” one – is an *empty* list;
+> - the “second” one – is a list, containing one *empty* list;
+> - and, the “third” one – is a list, containing **three** empty lists.
 
 If you want to get an element *out* of a list, by “index”, – use the `!!`. The indices –
 start at a `0`.
