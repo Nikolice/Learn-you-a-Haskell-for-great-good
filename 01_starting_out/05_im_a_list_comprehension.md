@@ -1,4 +1,4 @@
-# I'm a list comprehension
+# I'm – a *list* comprehension!
 
 If you've ever taken a course in mathematics, you've probably run into set comprehensions. They're normally used for building more *specific* sets out of *general* sets. A basic comprehension for a set that contains the first ten even natural numbers is `S = {2*x | x is a natural <= 10}`. The part before the pipe – is called the output function, `x` is the variable, `N` is the input set, and `x <= 10` – is the predicate. That means that: the set contains the *doubles* of all natural numbers which satisfy the predicate. 
 
@@ -26,7 +26,9 @@ ghci> [ x | x <- [50 .. 100], x `mod` 7 == 3]
 [52, 59, 66, 73, 80, 87, 94]   
 ```
 
-Success! Note that: weeding out lists (by predicates) – is also called **filtering**. We took a list of numbers – and we filtered them (by the predicate). Now – for another example. 
+Success! … 
+
+> Note that: weeding out lists (by predicates) – is also called **filtering**. We took a list of numbers – and we filtered them (by the predicate). Now – for another example. 
 
 Let's say: we want a comprehension which replaces *each* odd number (greater than `10`) with a "BANG!", and each odd number (which's less than `10`) with a "BOOM!"… If a number isn't odd – we throw it out of our list. For convenience, we'll put that comprehension inside a function – so we can *easily* reuse it.
 
@@ -80,7 +82,7 @@ ghci> [adjective ++ " " ++ noun | adjective <- adjectives,  noun <- nouns]
 "scheming hobo", "scheming frog", "scheming pope"]   
 ```
 
-I know! Let's write our own version of length! We'll call it `length'`:
+I know! … Let's write our *own* version – of length! … We'll – call it a `length'`:
 
 ```haskell
 length' xs = sum [1 | _ <- xs]   
