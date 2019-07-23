@@ -5,9 +5,9 @@ Much like shopping lists (in the real world), lists in “Haskell” – are ver
 - strings (which – *are* lists),
 - and list comprehensions. 
 
-In “Haskell”, lists – are a **homogenous** data structure. It stores several elements of the same type. That means that: we – can have a list of integers, or – a list of characters; but: we – can't have a list, which has a few integers – and (then) – a few characters… And now, a list! 
+In “Haskell”, lists – are a **homo-genous** data structure. It – stores *several* elements, of the *same* type! … That – means that: we – can have a *list* – of integers; or – a list – of *characters*; but: we – can't have a list, which has a *few* integers – and (then) – a few *characters*… And (now), – a list! 
 
-> **Note**: We – can use the `let` key-word – to define a name right in “GHCI”. Doing a `let a = 1` inside “GHCI” – is the equivalent of writing a `a = 1` in a script and (then) loading it. 
+> **Note**: We – can use the `let` key-word – to define a name (right) in “GHCI”. Doing a `let a = 1` (inside “GHCI”) – is the equivalent of writing a `a = 1` in a script and (then) loading it. 
 
 ```haskell
 ghci> let lostNumbers = [4,8,15,16,23,42]  
@@ -44,9 +44,9 @@ Notice – how `:` takes a number and a list of numbers (or: a character – and
 `[1,2,3]` – is (actually) just the syntactic sugar of a `1:2:3:[]`… And `[]` – is an empty list… If we prepend a `3` to it, – it becomes a `[3]`. If we (then) prepend a `2` for it – it becomes a `[2,3]`; and – so – on. 
 
 > **Note**: a `[]`, a `[[]]` and a `[[],[],[]]` – are (all) *different* things: 
-> the “first” one – is an *empty* list, 
-> the “second” one – is a list, containing one empty list,
-> and the “third” one – is a list, containing **three** empty lists.
+> - the “first” one – is an *empty* list, 
+> - the “second” one – is a list, containing one empty list,
+> - and the “third” one – is a list, containing **three** empty lists.
 
 If you want to get an element *out* of a list, by “index”, – use the `!!`. The indices –
 start at a `0`.
