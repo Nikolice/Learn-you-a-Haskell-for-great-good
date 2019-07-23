@@ -44,7 +44,7 @@ ghci> boomBangs [7 .. 13]
 ["BOOM!", "BOOM!", "BANG!", "BANG!"]   
 ```
 
-We can include several predicates. If we wanted all numbers from `10` to `20` that are not `13`, `15` or `19`, – we'd do:
+We – can include *several* predicates! … If we wanted *all* numbers from `10` to `20` (which – are not: `13`, `15`, or `19`), – we'd – do:
 
 ```haskell
 ghci> [ x | x <- [10 .. 20], x /= 13, x /= 15, x /= 19]  
@@ -52,7 +52,7 @@ ghci> [ x | x <- [10 .. 20], x /= 13, x /= 15, x /= 19]
 [10, 11, 12, 14, 16, 17, 18, 20]  
 ```
 
-Not only can we have *multiple* predicates in list comprehensions (an element must satisfy *all* the predicates – to be included in the resulting list); we can also draw from several lists. When drawing from several lists – comprehensions produce *all* combinations of the given lists and then, join them by the output function we supply. A list produced by a comprehension which draws from two lists of length `4` – will have a length of `16` (provided we don't filter them). If we have two lists (`[2, 5, 10]` and `[8, 10, 11]`) and we want to get the *products* (of all the possible combinations – between numbers in those lists) – here's what we'd do:
+Not only can we have *multiple* predicates in list comprehensions (an element must satisfy *all* the predicates – to be included in the resulting list); – we can (also) draw from several *lists*… When drawing from several *lists* – comprehensions produce *all* combinations of the given lists; and then, – join them – by the output function we supply… A list, – produced by a comprehension, which draws from two lists of length `4`, – will have a length of `16` (provided, we don't *filter* them). If we have *two* lists (`[2, 5, 10]` and `[8, 10, 11]`) and we want to get the *products* (of – *all* the possible combinations, – between numbers, in those *lists*) – here's – what we'd *do*:
 
 ```haskell
 ghci> [ x*y | x <- [2, 5, 10], y <- [8, 10, 11]]  
@@ -60,7 +60,7 @@ ghci> [ x*y | x <- [2, 5, 10], y <- [8, 10, 11]]
 [16, 20, 22, 40, 50, 55, 80, 100, 110]   
 ```
 
-As expected, the length (of the new list) is `9`. What if we wanted all possible products which are more than `50`?
+As expected, the length (of the *new* list) – is `9`… What – if we wanted all (possible) products, which – are more, than `50`?
 
 ```haskell
 ghci> [ x*y | x <- [2, 5, 10], y <- [8, 10, 11], x*y > 50]  
@@ -68,7 +68,7 @@ ghci> [ x*y | x <- [2, 5, 10], y <- [8, 10, 11], x*y > 50]
 [55, 80, 100, 110]   
 ```
 
-How about a list comprehension which combines a list of adjectives and a list of nouns? … for epic hilarity:
+How – about a list comprehension, which combines [a list of *adjectives*] and [a list of *nouns*]? … for epic “hilarity”:
 
 ```haskell
 ghci> let nouns = ["hobo", "frog", "pope"]  
