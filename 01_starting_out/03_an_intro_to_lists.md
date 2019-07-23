@@ -16,7 +16,7 @@ ghci> lostNumbers
 [4,8,15,16,23,42]  
 ```
 
-As you can see, – lists – are denoted by “square” brackets (**`[` & `]`**); and, the “values” (in lists) – are separated: by *commas*… If we would (ever) tried parsing, of a list similar to a `[1,2,'a',3,'b','c',4]`; – the “Haskell” – would complain: the *characters* (in single quotes) – *are’t* numbers! … Speaking of characters; – strings – are *lists* (of characters): a `Hello!` – is the syntactic “sugar” of `['H','e','l','l','o','!']`… And, because the strings – are *lists*, – we – can use the “list’s” functions (on them); – which – is *really* handy! … So, a common task (of – putting 2 lists, together) – can be done: by a `++` operator:
+As you can see, – lists – are denoted by “square” brackets (**`[` & `]`**); and, the “values” (in lists) – are separated: by *commas*… If we would (ever) tried parsing, of a list similar to a `[1,2,'a',3,'b','c',4]`; – the “Haskell” – would complain: the *characters* (in single quotes) – *are’t* numbers! … Speaking of *characters*; – strings – are *lists* (of characters): a `Hello!` – is the syntactic “sugar” of `['H','e','l','l','o','!']`… And, because the strings – are *lists*, – we – can use the “list’s” functions (on them); – which – is *really* handy! … So, a common task (of – putting 2 lists, together) – can be done: by a `++` operator:
 
 ```haskell
 ghci> [1,2,3,4] ++ [9,10,11,12]  
@@ -39,7 +39,7 @@ ghci> 5:[1,2,3,4,5]
 [5,1,2,3,4,5]
 ```
 
-Notice – how `:` takes a number and a list of numbers (or: a character – and – a *list* of characters), where-as `++` – takes two lists… Even if you're adding an element to the end of a list (with `++`) – you *have* to surround it: with “square” brackets (so – it “becomes” a list)… 
+Notice – how `:` – takes a number (and – a list (of numbers)) (or: a character –and– a *list* (of characters)), – where-as, – `++` – takes *two* lists… Even if you're adding (an element) to the *end* of a list (with – `++`), – you – *have* to surround it (with – “square” brackets) (so, – it – “becomes” a list)… 
 
 `[1,2,3]` – is (actually) just the syntactic sugar of a `1:2:3:[]`… And `[]` – is an empty list… If we prepend a `3` to it, – it becomes a `[3]`. If we (then) prepend a `2` for it – it becomes a `[2,3]`; and – so – on. 
 
