@@ -1,6 +1,6 @@
 # Baby's first functions
 
-In the previous section – we’ve got a basic feel, for calling functions… Now – let's try making our own! Open up your favorite text editor, and – punch *in* this function (that – takes a number and multiplies it, by two): 
+In the previous section – we’ve got a basic “feel” for calling functions… Now – let's try making our own! Open up your favorite text editor, and – punch *in* this function (that – takes a number and multiplies it, by two): 
 
 ```haskell
 doubleMe x = x + x  
@@ -57,7 +57,7 @@ doubleSmallNumber x = if x > 100
                         else x*2   
 ```
 
-Right here – we introduced “Haskell's” **“if”** statement. You're (probably) familiar (with “if” statements): from *other* languages… The difference between “Haskell's” “if” statement and “if” statements in imperative languages – is that: the “else” part – is **mandatory** in “Haskell”. In imperative languages, – you can (just) *skip* a couple of steps (if – the condition isn't satisfied); but in “Haskell” – *every* ex-pression (and function) *must* re-turn some thing… We – could have (also) written that (“if” statement) in one line, but I find *this* way *more* read-able… An other thing (about the “if” statement, in Haskell) – is that: it is an _ex-pression_! … An ex-pression – is (basically) a piece of code, which – re-turns a *value*… `5` – is an ex-pression (be cause: it – re-turns `5`), `4 + 8` – is an ex-pression, `x + y` – is an ex-pression (be cause: it – re-turns the *sum*, – of `x` and `y`). Be cause: as the “else” is mandatory, – an “if” statement – will *al-ways* re-turn some thing; and that's – *why* it's an ex-pression… If we wanted «to add one» to every number, which was produced in our previous function, – we – could have its body (written), as that:
+Right here – we intro-duced “Haskell's” **“if”** statement. You're (probably) familiar (with “if” statements): from *other* languages… The difference be-tween “Haskell's” “if” statement and “if” statements in imperative languages – is that: the “else” part – is **mandatory** in “Haskell”. In imperative languages, – you can (just) *skip* a couple of steps (if – the condition isn't satisfied); but in “Haskell” – *every* ex-pression (and function) *must* re-turn some thing… We – could have (also) written that (“if” statement) in one line, but I find *this* way *more* read-able… An other thing (about the “if” statement, in Haskell) – is that: it is an _ex-pression_! … An ex-pression – is (basically) a piece of code, which – re-turns a *value*… `5` – is an ex-pression (be cause: it – re-turns `5`), `4 + 8` – is an ex-pression, `x + y` – is an ex-pression (be cause: it – re-turns the *sum*, – of `x` and `y`). Be cause: as the “else” is mandatory, – an “if” statement – will *al-ways* re-turn some thing; and that's – *why* it's an ex-pression… If we wanted «to add one» to every number, which was produced in our previous function, – we – could have its body (written), as that:
 
 ```haskell
 doubleSmallNumber' x = (if x > 100 then x else x*2) + 1

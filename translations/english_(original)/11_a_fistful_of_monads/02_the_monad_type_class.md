@@ -1,1 +1,0 @@
-# The Monad type class

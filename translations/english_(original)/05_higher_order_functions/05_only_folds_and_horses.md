@@ -1,1 +1,0 @@
-# Only folds and horses
