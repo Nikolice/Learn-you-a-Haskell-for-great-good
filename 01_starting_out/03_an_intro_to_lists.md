@@ -44,7 +44,7 @@ ghci> 5:[1,2,3,4,5]
 [5,1,2,3,4,5]
 ```
 
-Notice, – how `:` – takes a number 🔢 (and – a list (of numbers )) (or: a character 🔤 –and– a *list* (of characters )), – where-as, – `++` – takes *two* lists? … Even, if you're adding (an element) to the *end* (of a list) (with – a `++`), – you – *have* to surround it (with – the “square” brackets); so, – it “becomes” a list… 
+Notice, – how `:` – takes a number 🔢 (and – a list: of numbers) (or: a character 🔤 – and – a *list*: of characters), – where-as, – the `++` – takes *two* lists? … Even, if you're adding (an element) to the *end* (of a list) (with – a `++`), – you – *have* to surround it (with – the “square” brackets); so, – it “becomes” a list… 
 
 `[1,2,3]` – is (actually) just the syntactic sugar ✨ of a `1:2:3:[]`… And `[]` – is an empty list… If we prepend a `3` to it, – it becomes a `[3]`. If we (then) prepend a `2` for it – it becomes a `[2,3]`; and – so – on. 
 
