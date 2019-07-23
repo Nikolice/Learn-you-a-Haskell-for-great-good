@@ -75,8 +75,9 @@ ghci> let adjectives = ["lazy", "grouchy", "scheming"]
 
 ghci> [adjective ++ " " ++ noun | adjective <- adjectives,  noun <- nouns]  
 
-["lazy hobo", "lazy frog", "lazy pope", "grouchy hobo", "grouchy frog",   
-"grouchy pope", "scheming hobo", "scheming frog", "scheming pope"]   
+["lazy hobo", "lazy frog", "lazy pope", 
+"grouchy hobo", "grouchy frog", "grouchy pope", 
+"scheming hobo", "scheming frog", "scheming pope"]   
 ```
 
 I know! Let's write our own version of length! We'll call it `length'`:
@@ -85,9 +86,9 @@ I know! Let's write our own version of length! We'll call it `length'`:
 length' xs = sum [1 | _ <- xs]   
 ```
 
-`_` means that: we don't care what we'll draw from the list anyway, so (instead of writing a variable name which we'll never use) we just write `_`… This function – replaces *every* element (of a list) with `1` and then – sums that up. This means that: the resulting sum – will be the length of our list.
+`_` – means that: we – *don't* care what we'll *draw* (from the list) anyway, so (instead of writing a *variable* name, – which we'll never use) we just write: `_` … This (function) – replaces *every* element (of a list): with a `1`; – and (then) – sums that, up… This – means that: the resulting *sum* – will be the *length* of our list.
 
-Just a friendly reminder: because strings are lists – we *can* use list comprehensions (to process and produce strings). Here's a function – which takes a *string* and removes everything except uppercase letters from it:
+Just a friendly reminder: because strings are lists – we *can* use list comprehensions (to process and *produce* strings). Here's – a function – which takes a *string* and removes everything (except – upper-case letters) from it:
 
 ```haskell
 removeNonUppercase st = [ c | c <- st, c `elem` ['A' .. 'Z']]   
