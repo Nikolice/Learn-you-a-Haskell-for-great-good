@@ -1,4 +1,4 @@
-# Texas ranges
+# Texas’ ranges
 
 What – if we wanted a list: of *all* numbers, between `1` and `20`? … Sure; we – could (just) type them (all) out, – but (obviously) that's *not* a *solution* for gentle-men, who – demand *excellence* (from – their programming languages)… Instead, we'll – use **ranges**! … 
 
