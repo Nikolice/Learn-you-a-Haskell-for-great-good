@@ -44,14 +44,14 @@ ghci> 5:[1,2,3,4,5]
 [5,1,2,3,4,5]
 ```
 
-Notice, – how `:` – takes a number 🔢 (and – a list: of numbers) (or: a character 🔤 – and – a *list*: of characters), – where-as, – the `++` – takes *two* lists? … Even, if you're adding (an element) to the *end* (of a list) (with – a `++`), – you – *have* to surround it (with – the “square” brackets); so, – it “becomes” a list… 
+Notice, how `:` takes a number 🔢 (and, a list: of numbers) (or: a character 🔤 – and – a *list*, of characters) – where-as the `++` takes *two* lists? … Even if you're adding (an element) to the *end* of a list (with a `++`), – you – *have* to surround it (with – the “square” brackets): so – it “becomes” a list. 
 
-`[1,2,3]` – is (actually) just the syntactic sugar ✨ of a `1:2:3:[]`… And `[]` – is an empty list… If we prepend a `3` to it, – it becomes a `[3]`. If we (then) prepend a `2` for it – it becomes a `[2,3]`; and – so – on. 
+`[1,2,3]` – is (actually) just a syntactic sugar ✨ (of the `1:2:3:[]`). And `[]` – is an empty list… If we prepend a `3` (to it), – it becomes a `[3]`. If we (then) prepend a `2` (for it), – it becomes a `[2,3]`; – and, – so – on!
 
-> **Note**: a `[]`, a `[[]]` and a `[[],[],[]]` – are (all) *different* things: 
-> - the “first” one – is an *empty* list;
-> - the “second” one – is a list, containing one *empty* list;
-> - and, the “third” one – is a list, containing **three** empty lists.
+> **Note**: a “`[]`”, a “`[[]]`”, (and) a “`[[],[],[]]`” – are (all) *different* things: 
+> - The “first” one – is an empty list;
+> - the “second” one – is a list, – containing *one* empty list;
+> - … and, the “third” one – is a list, containing *three* empty lists.
 
 If you want to get an element *out* of a list, by “index”, – use the `!!` (the indices –
 start at a `0`):
@@ -64,11 +64,11 @@ ghci> [9.4,33.2,96.2,11.2,23.25] !! 1
 33.2  
 ```
 
-But; if you try to get the *sixth* element, – from a list, which (only) has *four* elements, –
-you'll – get an “error”… So – be care-ful. ⚠
+But; if you try to get the *sixth* element (from a list, which (only) has *four* elements), –
+you'll – get an “error”; so – be care-ful. ⚠
 
-Lists – can (also) “contain” lists. They – can (also) contain lists, – which – contain lists, –
-which – are (also) containing lists: 
+Lists – can (al-so) “contain” lists. They – can (al-so) contain lists; – which – can contain lists, –
+which (al-so) can be containing lists: 
 
 ```haskell
 ghci> let b = [[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]  
@@ -86,9 +86,9 @@ ghci> b !! 2
 [1,2,2,3,4]   
 ```
 
-The lists *within* a list – can be of *different* lengths; but… they – can't be of “different” types! Just like you can't have a list, which has *some* characters 🔤 and *some* numbers 🔢, – you – can't have a list, which has some lists of *characters* and some lists – of *numbers*. 🔤🔢 ⚠
+The lists *with/in* a list – can be of *different* lengths; but… they – can't be of “different” types! Just like you can't have a list, which has *some* characters 🔤 and *some* numbers 🔢, – you – can't have a list, which has: some lists – of *characters*, and some lists – of *numbers*. 🔤🔢 ⚠
 
-Lists – can be compared, if the stuff (which – they contain 📦) *can* be compared. When using the `<`, the `<=`, the `>` and the `>=` (to “compare” lists), – they – are compared in a **lexico-graphical** order: first – the “heads” are compared; … if they are “equal”, – then – the *second* elements – are compared; – et cetera.
+Lists – can be compared, if the stuff (which – they contain 📦) *can* be compared. When using the `<`, the `<=`, the `>` (and) the `>=` (to – “compare” lists), – they – are compared in a **lexico-graphical** order: first – the “heads” are compared; … if they are “equal”, – then – the *second* elements – are compared; – et cetera.
 
 ```haskell
 ghci> [3,2,1] > [2,1,0]  
