@@ -1,6 +1,6 @@
 # An intro – to lists
 
-Much like shopping lists 🛍 (in the real world 🗺), – “lists” (in “Haskell”) are very use-ful! … It's – the *most* used data structure, and – it can be used in a *multitude* of different ways: to model (and solve) a *whole* bunch of problems… Lists – are awesome. In this section  – we'll look at the basics, of: 
+Much like shopping lists 🛍 (in the *real* world 🗺), – “lists” (in “Haskell”) are very use-ful! … It's – the *most* used data structure, and – it can be used in a *multitude* of different ways: to model (and solve) a *whole* bunch of problems… Lists – are awesome. In this section  – we'll look at the basics, of: 
 - lists;
 - strings (which – *are* lists);
 - and – list comprehensions. 
