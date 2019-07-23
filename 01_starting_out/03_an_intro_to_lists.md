@@ -2,12 +2,12 @@
 
 Much like shopping lists (in the real world), lists in “Haskell” – are very useful. It's the most used data structure, and it can be used in a *multitude* of different ways: to model and solve a *whole* bunch of problems! … Lists – are SO awesome… In this section  – we'll look at the basics of: 
 - lists,
-- strings (which – are lists),
+- strings (which – *are* lists),
 - and list comprehensions. 
 
 In “Haskell”, lists – are a **homogenous** data structure. It stores several elements of the same type. That means that: we – can have a list of integers, or – a list of characters; but: we – can't have a list, which has a few integers – and (then) – a few characters… And now, a list! 
 
-> **Note**: We – can use the `let` key-word – to define a name right in “GHCI”. Doing a `let a = 1` inside “GHCI” – is the equivalent of writing `a = 1 in` a script and (then) loading it. 
+> **Note**: We – can use the `let` key-word – to define a name right in “GHCI”. Doing a `let a = 1` inside “GHCI” – is the equivalent of writing a `a = 1` in a script and (then) loading it. 
 
 ```haskell
 ghci> let lostNumbers = [4,8,15,16,23,42]  
