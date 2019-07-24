@@ -1,12 +1,12 @@
 # I'm – a *list* comprehension!
 
-If you've ever taken a course in mathematics, you've probably run into set comprehensions. They're normally used for building more *specific* sets out of *general* sets. A basic comprehension for a set that contains the first ten even natural numbers is `S = {2*x | x is a natural <= 10}`. The part before the pipe – is called the output function, `x` is the variable, `N` is the input set, and `x <= 10` – is the predicate. That means that: the set contains the *doubles* of all natural numbers which satisfy the predicate. 
+If you've (ever) taken a course in mathematics – you've (probably) “run” into «set comprehensions». They're (normally) used for building more *specific* sets (out of *general* sets). A basic comprehension example (for a set, which contains the first **ten** even natural numbers), – is: `S = {2*x | x is N <= 10}`. The part before the “pipe” – is called the «output» function; `x` – is the «variable»; `N` – is the «input» set; and `x <= 10` – is the «predicate». That means that: the set – contains the *doubles*: of all natural numbers, which were specified to obey the predicate. 
 
-If we wanted to write that in “Haskell” – we could do something like: `take 10 [2, 4 ..]`. 
+If we wanted to write that in “Haskell” – we could do something like this: `take 10 [2, 4 ..]`. 
 
-But what if we *didn't* want doubles of the first `10` natural numbers, but some kind of *more* complex function applied on them? … We could use a list comprehension for that. 
+But what – if we *didn't* want **doubles** of the first `10` natural numbers, but some kind of a *more* complex function (applied on them)? … We – could use a «list comprehension» (for that). 
 
-List comprehensions – are very *similar* to set comprehensions. We'll stick to getting the first `10` even numbers (for now). The list comprehension we could use – is: `[x*2 | x <- [1 .. 10]]`. The `x` – is drawn from `[1 .. 10]`, and for every element (in `[1 .. 10]`, which we have bound to `x`) – we get that element: doubled… Here's – that comprehension (in “action”):
+«List comprehensions» – are very *similar* to «set comprehensions»… We'll stick – to getting the first `10` even numbers (for now). The list comprehension we could use – is: `[x*2 | x <- [1 .. 10]]`. The `x` – is drawn from `[1 .. 10]`, and for every element in `[1 .. 10]` (which – we have bound: to `x`) – we get that element: doubled… Here's – that comprehension (in “action”):
 
 ```haskell
 ghci> [x*2 | x <- [1..10]]  
@@ -16,7 +16,7 @@ ghci> [x*2 | x <- [1..10]]
 
 As you can see, – we – *get* the desired results! … 
 
-Now – let's add a condition (or a predicate) to that comprehension. Predicates go after the binding parts – and are separated (from them) by a comma. Let's say: we want only the elements, which (doubled) are greater than (or equal) to `12`. 
+Now – let's add a *condition* (or – a *predicate*), to that “comprehension”! … Predicates – go *after* the binding parts, – and – are *separated* (from them) by a “comma”… Let's say: we – want (only) the elements, which (when doubled) – are *greater*, than (or – equal to) `12`:
 
 ```haskell
 ghci> [x*2 | x <- [1 .. 10], x*2 >= 12]  
@@ -24,9 +24,9 @@ ghci> [x*2 | x <- [1 .. 10], x*2 >= 12]
 [12, 14, 16, 18, 20]  
 ```
 
-Cool; it works. 
+Cool? It works?
 
-How about if we wanted all numbers (from `50` to `100`) whose remainder (when divided with the number `7`) is `3`? … Easy:
+How about if we wanted all numbers (from `50` to `100`), whose remainder (when divided with a `7`) is `3`? … Easy:
 
 ```haskell
 ghci> [ x | x <- [50 .. 100], x `mod` 7 == 3]  
@@ -38,15 +38,15 @@ Success! …
 
 > **Note that:** weeding out lists (by predicates) – is also called “**filtering**”. 
 
-We – took a list – of numbers; – and – we filtered them (by – the predicate)… Now – for another example. 
+We – took a list (of numbers); – and – filtered it (by the predicate)… Now – for another example. 
 
-Let's say: we want a comprehension which replaces *each* odd number (greater than `10`) with a "BANG!", and each odd number (which's less than `10`) with a "BOOM!"… If a number isn't odd – we throw it out of our list. For convenience, we'll put that comprehension inside a function – so we can *easily* reuse it.
+Let's say: we want a comprehension, which replaces *each* odd number (greater, than `10`) with a `BANG!`, and each odd number (which's less, than `10`) with a `BOOM!`… If a number isn't odd – we throw it out (of our list). For convenience: we'll – put that comprehension inside a function; – so, – we can *easily* reuse it.
 
 ```haskell
 boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]   
 ```
 
-The last part of the comprehension – is the predicate. The function `odd` – returns `True` on an odd number – and `False` on an even one. The element is included in the list – only if *all* the predicates evaluate to `True`. 
+The last part of the comprehension – is the predicate. The function `odd` – returns `True` on an odd number (and – `False` – on an even one). The element will be included to the list – only if *all* the predicates evaluate to `True`. 
 
 ```haskell
 ghci> boomBangs [7 .. 13]  
@@ -124,9 +124,9 @@ ghci> removeNonUppercase "IdontLIKEFROGS"
 "ILIKEFROGS"   
 ```
 
-The predicate here – does all the work. It says that: the character – will be included in the new list – only if it's an element of the list `['A' .. 'Z']`. Nested list comprehensions – are also possible, if you're operating on lists which contain lists. 
+The predicate here – does all the work. It says that: the character – will be included in the new list – only if it's an element of the `['A' .. 'Z']` list… Nested list comprehensions – are also possible, if you're operating on lists, which (themselves) contain lists. 
 
-A list – contains several lists of numbers. Let's remove *all* odd numbers without flattening the list:
+A list – contains several lists (of numbers). Let's remove *all* odd numbers, without flattening the list:
 
 ```haskell
 ghci> let xxs = [[1, 3, 5, 2, 3, 1, 2, 4, 5], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 4, 2, 1, 6, 3, 1, 3, 2, 3, 6]] 
@@ -136,4 +136,4 @@ ghci> [ [ x | x <- xs, even x ] | xs <- xxs]
 [[2, 2, 4], [2, 4, 6, 8], [2, 4, 2, 6, 2, 6]]  
 ```
 
-You can write list comprehensions across *several* lines. So if you're not in `GHCI`, it's better to split longer list comprehensions across multiple lines; especially – if they're nested.
+You – can write list comprehensions across *several* lines. So, if you're not in `GHCI` – it's better to split longer list comprehensions (across – multiple lines); especially – if they're *nested*.
