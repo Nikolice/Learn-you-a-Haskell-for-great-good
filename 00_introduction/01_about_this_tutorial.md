@@ -1,6 +1,6 @@
 # About this tutorial
 
-Welcome, – to learn you a “Haskell”, for great good! … 💡
+Welcome – to learn you a “Haskell”, for great good! … 💡
 
 If you're reading this, – chances – are: you *want* to learn “Haskell” … Well; you've came to the *right place*, – but let's talk (about this **tutorial**) a *bit*, first? … ✋
 
@@ -10,7 +10,7 @@ I decided to write this – because I wanted to solidify *my own* knowledge (of 
 
 There – were quite a *few* tutorials (on “Haskell”, floating around the “Internet” 🌐). When I was starting out (in “Haskell”) – I didn't learn from just *one* resource; the way I learned – was through reading *different* tutorials (and articles), because each one explained something in *another* way! 🎭
 
-By going – I was able put to together the pieces; and – it all just came falling, into place 🧩 … So, this – is an attempt – at adding *another* useful resource (for, learning “Haskell”); – so – you – will have a *bigger* chance, of finding one you like! ♥ ♠ ♣ ♦
+By going – I was able put to together the pieces; and – it all just came falling, into place 🧩 … So, this – is an attempt at adding *another* useful resource (for, learning “Haskell”); – so – you – will have a *bigger* chance, of finding one you like! ♥ ♠ ♣ ♦
 
 ## Experience to have 🎓
 
@@ -18,7 +18,7 @@ This tutorial – is aimed at people, who *have* experience in **imperative** pr
 
 Although (I bet that) even if you *don't* have any “significant” programming experience – a *smart* person (such, as yourself) *will* be able to follow along – and – **learn** “Haskell”! 💪
 
-## IRC-channel ⚡
+## IRC channel ⚡
 
 The channel “**#haskell**” (on the [“Free Node” Net-Work](https://freenode.net/)) – is a *great* place to ask questions, if you're feeling “stuck”. 👁‍🗨
 
