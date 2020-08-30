@@ -5,8 +5,8 @@
 In *imperative* languages – you get things *done* by giving (to the Computer 🤖) a *sequence* of tasks (0️⃣, 1️⃣, 2️⃣, 3️⃣, …), and then – it executes them … While executing them – it can change “state”; for instance: you set a variable `a` to `5`, and then – do some “stuff”, and then – *reset* it (to something else). You have control flow structures (for doing some action, *several* times). 
 
 But, in purely *functional* programming – you *don't* tell (to the Computer 🤖) *what to __do__*, but (rather) *what the stuff __is__*: 
-- The “_factorial_” (of a number) – is the product of *all* the numbers: from `1` – to that number;
-- The “_sum_” (of a list of numbers) – is the *first* number, plus – the sum of all *other* numbers;
+- The “_factorial_” (of a number) – **is** the product of *all* the numbers: from `1` – to that number;
+- The “_sum_” (of a list of numbers) – **is** the *first* number, plus – the sum of all *other* numbers;
 - … and – so – on.
 
 You express **_that_** – in the form of **functions**. You (also) can't *set* a variable to *something* – and (then) *reset* it (to something else) later. If you say: «The `a` – is `5`» – you can't say «It's something *else*!» later, because you *have* said: «It – was `5`» … What are you – some kind of **_liar_**? 💔
