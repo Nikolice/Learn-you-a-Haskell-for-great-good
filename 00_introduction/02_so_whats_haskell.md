@@ -4,11 +4,11 @@
 
 ## Paradigms: “imperative” 🆚 “functional”
 
-### «A». “Imperative” paradigm
+### 🅰: “imperative” paradigm
 
 In “imperative” languages – you get things *done* by giving *a **sequence** of tasks* (№№ 0️⃣, 1️⃣, 2️⃣, 3️⃣, …) to the Computer 🤖, – and then – it executes them … While executing – it can change “state”; for instance: you set «“`a`” = “`5`”», – and then – *do* some **stuff**; and then – reset it, to something else … You have control flow structures, for doing some action several times! 
 
-### «B». “Functional” paradigm
+### 🅱: “functional” paradigm
 
 In purely “functional” programming – you don't tell (to the Computer 🤖) what to *do*, but rather – what **the stuff** *is*: 
 - the “factorial” (of a *number*) = the product of **all** numbers: from «`1`» – to that number;
@@ -19,7 +19,7 @@ You express that – in the form of **functions**! … You (also) *can't* set a 
 
 ## Benefits 👍
 
-### № 1. “Referential transparency”
+### № 1️⃣. “Referential transparency”
 
 So, in purely *functional* languages, – a **function** – has *no* “side effects” ✨; the only thing it *can* do – is to calculate 🧮 – and – **return** something (as a “result”)… 
 
@@ -27,7 +27,7 @@ At first, this – seems (kind of) “limiting”, but – has some very *nice* 
 
 That's – called __“referential transparency”__; and not only does it *allow* the Compiler 🤖 to *reason* about the Program's behavior, but – it (also) allows **you** to easily *deduce* (and even *prove*) that: _«The function – is **correct**!»_; and then – build more *complex* functions: by _“gluing”_ “simple” functions – together! 🧱
 
-### № 2. “Laziness” 😴
+### № 2️⃣. “Laziness” 😴
 
 “Haskell” – is “__lazy__”; that – means that (unless – specifically told, otherwise): “Haskell” – *won't* neither execute functions, *nor* calculate things – until – it's **really** forced, to **show** *you* the result! 💤
 
@@ -40,7 +40,7 @@ Say – you have:
 #### Example:
 If we wanted to *multiply* our list by “`8`”:
 
-##### Variant № 1: __“A”__ (imperative way)
+##### Variant № 1️⃣: __“🅰”__ (imperative way)
 If we do a «`doubleMe(doubleMe(doubleMe(xs)))`», – it would (probably): 
 - pass (through the list) *once*,
 - make a *copy*,
@@ -48,7 +48,7 @@ If we do a «`doubleMe(doubleMe(doubleMe(xs)))`», – it would (probably):
 
 Then – it would *pass* (through the list) for **another** *two* times, and – return the *result*.
 
-##### Variant № 2: __“B”__ (lazy way)
+##### Variant № 2️⃣: __“🅱”__ (“lazy” way)
 
 Calling «`doubleMe`» on a list (without forcing it, to *show* you the result) – ends up in the Program (sort of) “telling” you: **_«Yeah, yeah! … I'll do it, later»_**. But once you want to *see* the result, – then:
 
@@ -60,7 +60,7 @@ Calling «`doubleMe`» on a list (without forcing it, to *show* you the result) 
 
 So – it does only **one** pass through the *list*, and only when you **“really”** need it! … That way, when you want something from a _“lazy” language_ – you can (just) take some *initial* data, and efficiently transform (and mend) it; so – it *resembles* what you want, at the end. 
 
-### № 3. “Statically” typed
+### № 3️⃣. “Statically” typed
 
 “Haskell” – is *statically* typed. When you compile your program – the **Compiler** 🤖 knows: 
 - which “piece” (of code) – is a *number*; 🔢
@@ -69,7 +69,7 @@ So – it does only **one** pass through the *list*, and only when you **“real
 
 That – means that: a lot of ***possible*** errors are caught at *compile* time 🤏: if you try to add (together) a *“number”* and a *“string”* – the **Compiler** 🤖 will “whine” at you! 👋 …
 
-### № 4. Type inference
+### № 4️⃣. Type inference
 
 “Haskell” – uses a _type system_, which has **“type inference”**. That – means that: you *don't* have to ***explicitly*** label every piece of “code” with a type – because the “type system” can (intelligently ✨) figure out *a lot*, about it. 🤖
 
@@ -77,7 +77,7 @@ If you say: «“`a`” = `5 + 4`» – you *don't* need to tell “Haskell”, 
 
 Type inference (also) allows your code to be *more* “general”: 🎓 if a function (you make) takes ***two*** parameters (and – *adds* them, together), and you *don't* (explicitly) state their type – the function *will* work on **any** two parameters, which act like *numbers*. 🔢
 
-### № 5. Shorter programs
+### № 5️⃣. Shorter programs
 
 “Haskell” – is elegant and concise 🎩 … Because it uses a lot of “high level” concepts – “Haskell” programs are (usually) **shorter**, than their *imperative* equivalents. And, shorter programs – are *easier* to maintain 🖇 (than *longer* ones); and have *less* “bugs”. 🐛
 
