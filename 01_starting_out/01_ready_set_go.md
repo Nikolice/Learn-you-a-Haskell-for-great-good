@@ -2,9 +2,9 @@
 
 ## Alright? … Let's get started?
 
-§ № <a id="1" href="#1">«0️⃣1️⃣»</a>. If you’re sort of a _“horrible”_ person 👻 (who *didn't* read the introduction, to this thing; … so, you’ve *skipped* it?) – you might *want* to read the **last** section of introduction, anyway, – because it explains: 
-- *what* – do you *need* (in order to follow this tutorial); 🛒
-- *how* – we're going to “load” functions. 🤏
+§ № <a id="1" href="#1">«0️⃣1️⃣»</a>. If you’re sort of a _“horrible”_ person 👻 (who *didn't* read the introduction, to this thing; … so, you’ve *skipped* it?), – you – might *want* to read the **last** section of introduction, anyway, – because it explains: 
+- *what* – do you *need* (in order to **follow** this tutorial); 🛒🤿
+- *how* – we're going to “load” functions. 🔬🤏
 
 § № <a id="2" href="#2">«0️⃣2️⃣»</a>. The **first** thing (we're “going”, to do) – is – to “run” the `ghc`’s «interactive mode», – and – to *call* for some **functions** (to get a *very* _“basic”_ feel, for the “Haskell”). 
 
@@ -21,7 +21,7 @@ Loading package base … ; linking … ; done!
 
 Prelude> _
 ```
-Congratulations: you're *in* the “__GHC-i__” ! … The prompt (here) – is a „`Prelude`“; but (because it can *get* longer, when you load “stuff” into the *session*) we're “going” to use a „`GHCI`“ ! … If you want to have *same* prompt – type in: 
+Congratulations: you're *in* the “__GHCI__” ! … The prompt (here) – is a „`Prelude`“; but (because it can *get* longer, when you load “stuff” into the *session*) we're “going” to use a „`GHCI`“ ! … If you want to have *same* prompt – type in: 
 
 ```text
 :set prompt "GHCI> "
@@ -30,19 +30,20 @@ Congratulations: you're *in* the “__GHC-i__” ! … The prompt (here) – is 
 
 § № <a id="4" href="#4">«0️⃣4️⃣»</a>. Here's – some simple arithmetics: 🎓
 
-```haskell
-GHCI>       2 + 15   →   17 
-           49 * 100  → 4900  
-         1892 − 1472 →  420  
-            5 / 2    →    2.5  
+```Haskell
+GHCI>    2 +   15 →   17 
+        49 *  100 → 4900  
+      1892 − 1472 →  420  
+         5 /    2 →    2.5  
 ```
 
 This – is *pretty* self-explanatory … We – can (also) use *several* operators, on *one* line; and all the *“usual”* precedence rules – are obeyed … We – can use the *parentheses*: to make the *precedence* *__explicit__* (or – to *change* it): 🔢
 
-```haskell
-GHCI>  ( 50  *   100 ) − 4999  →        1  
-         50  *   100   − 4999  →        1  
-         50  * ( 100   − 4999) →  −244950  
+```Haskell
+GHCI>  
+  ( 50  *   100 ) − 4999  →        1  
+    50  *   100   − 4999  →        1  
+    50  * ( 100   − 4999) →  −244950  
 ```
 
 Pretty “cool”, huh? … Yeah, I know: it's – not; but – bear with me. 
@@ -57,7 +58,7 @@ Pretty “cool”, huh? … Yeah, I know: it's – not; but – bear with me.
 - «`not`» – negates a «`True`» (or a «`False`»).
 
 
-```haskell
+```Haskell
 GHCI>      True && False → False
            True && True  → True
 
@@ -70,7 +71,7 @@ GHCI>      True && False → False
 
 § № <a id="7" href="#7">«0️⃣7️⃣»</a>. Testing for “equality” – is done like so:
 
-```haskell
+```Haskell
 GHCI>    5    ==    5     →  True
          1    ==    0     →  False
 
@@ -116,7 +117,7 @@ Yikes! … What __“GHCI”__ is telling us (here) – is that: the `"llama"` �
 
 § № <a id="12" href="#12">«1️⃣2️⃣»</a>. For a start – we'll try *calling* one of the **most** boring functions (in “Haskell”):
 
-```haskell
+```Haskell
 GHCI> succ 8 → 9   
 ```
 
@@ -128,41 +129,45 @@ The “`succ`” function: takes *any* thing, which has a *__defined__* successo
 - «`min`» – returns the *one*, which's *lesser*; 
 - and «`max`» – returns the *one*, which's *greater*. 
 
-See – for yourself: 
+See, for yourself:
 
-```haskell
+```Haskell
 GHCI>   min    9     10     →    9
         min    3.4    3.2   →    3.2 
         max  100    101     →  101
 ```
 
-§ № <a id="14" href="#14">«1️⃣4️⃣»</a>. However; if we wanted to get the *successor* of the **product** (of numbers «`9`» & «`10`») – we *couldn't* write just a «`succ 9 * 10`», – because – that – would *get* the successor of «`9`», – which would (then) be multiplied by «`10`» (resulting in a «`100`») … We'd have to write «`succ (9 * 10)`», to get the «`91`»!
+§ № <a id="14" href="#14">«1️⃣4️⃣»</a>. However, if we wanted to get the *successor* of the **product** (of numbers: «`9`» & «`10`») – we *couldn't* write just a «`succ 9 * 10`», – because – that – would *get* the successor of «`9`», – which would (then) be multiplied, by «`10`» (resulting – in a «`100`») … We'd have to write «`succ (9 * 10)`», to get the «`91`»!
 
-### Infix call
+### In-fix call
 
-§ № <a id="15" href="#15">«1️⃣5️⃣»</a>. If a function takes *two* parameters – we can (also) call it like an “infix” function: by *surrounding* it with “back-ticks”. 
+§ № <a id="15" href="#15">«1️⃣5️⃣»</a>. If a function takes *two* parameters – we can (also) call it like an “in-fix” function: by *surrounding* it with “__back-ticks__”. 
 
-For instance, the «`div`» function: takes *two* integers, and, does an *integral* division (between them) … Doing a «`div 92 10`» – results in «`9`», – but (when we call it like *that*) there *may* be some **confusion**, as: 
+For instance: the «`div`» function – takes *two* integers, and – does an *integral* division (between them) … Doing a «`div 92 10`» – results in «`9`», – but (when we call it like *that*) there *may* be some **confusion**, as: 
 
 - *which* (of the numbers) – is doing the *division*?
 - and, – *which* – is a *divided* being? 
 
-… So – we can call it as an “**in**-fix” function: by doing a «``92 `div` 10``» – and (suddenly) – it's much more clear!
+… So – we can call it as an “**in**-fix” function: by doing a «``92 `div` 10``»; – and (suddenly) – it's *much* more clear!
 
 ### Parenthesis usage
 
-§ № <a id="16" href="#16">«1️⃣6️⃣»</a>. Lots of people (who “came” from *imperative* languages) tend to stick to the notion, that: parentheses – should denote function's *application* … For an example, – in __“C”__ – you use the parentheses to *call* functions, like: 
+§ № <a id="16" href="#16">«1️⃣6️⃣»</a>. Lots of people (who “came” from *imperative* languages) tend to stick to the notion, that: **parentheses** – should denote function's *application* … For an example, – in __“C”__ – you would use the *parentheses* to call functions, like: 
 - «__`foo()`__», 
 - «__`bar(1)`__»,
-- or «__`baz(3, "haha")`__».
+- or – «__`baz(3, "haha")`__».
 
 As we've *said*, – **spaces** – are used for *function application* (in “Haskell”) … So, those functions (in “Haskell”) – would be: 
 - «`foo`», 
 - «`bar 1`», 
 - and – «`baz 3 "haha"`».
 
-So, if you see something like __«`bar (bar 3)`»__ – it *doesn't* mean that: _«The `bar` – is called: with a __«`bar`»__ **&** a __«`3`»__, as the parameters!»_ … It – means _that_: 
-- We (first) *call* for the *__“inner”__* function («`bar`»), with a «`3`» (as the parameter), – to get some **number** ;
-- and (then) – we call (the «`bar`») *again*: *with* that number… 
+So, if you see something like __«`bar (bar 3)`»__ – it *doesn't* mean that: _«The `bar` – is called: with a «`bar`» **&** a «`3`», as the parameters!»_ … It – means _that_: 
+- We (first) *call* for the *__“inner”__* function («`bar`»), with a «`3`» (as the parameter), – to get some **number**;
+- and (then) – we call (the «`bar`») again: *with* that number. 
 
-In “C”, – that – would be something, like: «`bar(bar(3))`».
+In “__C__”, – that – would be something like: 
+
+```C
+bar(bar(3))
+```
